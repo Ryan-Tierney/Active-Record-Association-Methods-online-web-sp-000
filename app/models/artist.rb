@@ -15,6 +15,6 @@ class Artist < ActiveRecord::Base
   end
 
   def genre_count
-    song_count.genre
+    self.genres.count
   end
 end
